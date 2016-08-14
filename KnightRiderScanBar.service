@@ -1,0 +1,12 @@
+[Unit]
+Description=knight rider scanbar
+
+[Service]
+Type=simple
+Restart=always
+User=root
+WorkingDirectory=/home/pi
+ExecStart=/usr/bin/python /home/pi/KnightRiderScanBar.py
+
+[Install]
+WantedBy=multi-user.target
